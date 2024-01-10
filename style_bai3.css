@@ -1,0 +1,25 @@
+body{
+    text-align: center;
+}
+.menu {
+    list-style: none; /* Loại bỏ dấu đầu dòng của danh sách */
+    padding: 0; /* Loại bỏ padding mặc định của danh sách */
+}
+
+.menu li {
+    display: inline-block; /* Hiển thị các mục danh sách trên cùng một hàng ngang */
+    margin-right: 10px; /* Khoảng cách giữa các mục danh sách */
+}
+
+.menu li a {
+    text-decoration: none; /* Loại bỏ gạch chân mặc định của liên kết */
+    color: blue; /* Màu chữ mặc định của liên kết */
+}
+.menu li a:visited {
+    color: green;
+}
+.menu li a:hover {
+    color: red; /* Màu chữ khi di chuột qua liên kết */
+    text-decoration: underline; /* Thêm gạch chân khi di chuột qua */
+
+}
