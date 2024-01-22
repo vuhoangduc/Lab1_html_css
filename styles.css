@@ -119,7 +119,7 @@ nav ul li a {
 .box-img {
     width: 100%;
     height: 650px;
-    background-image: url('/lab1/img/Images-1x3.png');
+    background-image: url('img/Images-1x3.png');
     background-repeat: no-repeat;
     margin-bottom: 20px;
 }
