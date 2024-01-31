@@ -2,78 +2,209 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Lab 3 - Form HTML</title>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&display=swap"
-        rel="stylesheet" />
-    <link rel="stylesheet" href="./style.css" />
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
 </head>
 
 <body>
-    <div class="form-wrapper">
-        <div class="form-contact">
-            <h1>Get in <span class="touch">touch</span></h1>
-            <p>
-                Enim tempor eget pharetra facilisis sed maecenas adipiscing. Eu leo
-                molestie vel, ornare non id blandit netus.
-            </p>
-            <form class="form-content">
-                <input class="input-form" type="text" placeholder="Contact name" />
-                <input class="input-form" type="text" placeholder="Street" />
-                <div class="city">
-                    <input class="input-form" type="text" placeholder="City" />
-                    <input class="input-form-post" type="number" placeholder="Postcode" />
-                </div>
-                <input class="input-form" type="number" placeholder="Contact Phone" />
-                <input class="input-form" type="email" placeholder="Email" />
-                <input class="input-form" type="text" placeholder="Let’s talk about your idea" />
-                <label class="input-file" for="upload">
-                    <div>
-                        <img src="./img/upload.png" alt="" />
-                        <span>Upload Additional file</span>
-                    </div>
-                    <input type="file" id="upload" hidden />
-                </label>
-
-                <p>Attach file. File size of your documents should not exceed 10MB</p>
-                <div>
-                    <input type="checkbox" id="confirm" />
-                    <label for="confirm">I want to protect my data by signing an NDA</label>
-                </div>
-                <button type="submit" class="btn">Submit</button>
-
-                <div class="icon-wrapper">
-                    <div class="icon-item">
-                        <img src="./img/Frame 831.png" alt="" />
-                        <div class="icon-text">
-                            <span>Phone</span>
-                            <span>0987654321</span>
-                        </div>
-                    </div>
-
-                    <div class="icon-item">
-                        <img src="./img/Frame 833.png" alt="" />
-                        <div class="icon-text">
-                            <span>E-mail</span>
-                            <span>info@company.com</span>
-                        </div>
-                    </div>
-                    <div class="icon-item">
-                        <img src="./img/Frame 833.png" alt="" />
-                        <div class="icon-text">
-                            <span>HELPDESK</span>
-                            <span>https://helpdesk.com</span>
-                        </div>
-                    </div>
-                </div>
-            </form>
+    <header>
+        <div class="banner">
+            <img src="img/Image.png" alt="">
         </div>
-        <div class="goolge-map">
-            <iframe
-                src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14895.454672857642!2d105.7472546!3d21.0381403!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x313455e940879933%3A0xcf10b34e9f1a03df!2zVHLGsOG7nW5nIENhbyDEkeG6s25nIEZQVCBQb2x5dGVjaG5pYw!5e0!3m2!1svi!2s!4v1706272582375!5m2!1svi!2s"
-                width="638" height="819" style="border: 0" allowfullscreen="" loading="lazy"
-                referrerpolicy="no-referrer-when-downgrade"></iframe>
+        <div class="profile">
+            <div class="info-profile">
+                <img class="avatar" src="img/Photo.png" alt="">
+                <div>
+                    <h1>Coffee Store</h1>
+                    <span>Odessa, ON</span>
+                    <div class="info-profile-address">
+                        <img src="img/Pickeup.png" alt="">
+                        <span>Location<br>(Pick Up):</span>
+                        <span class="txt-address">3 McAlpine St, Toronto, ON, CA, M5R 3T5</span>
+                        <a href="">Get Direction</a>
+                    </div>
+                </div>
+            </div>
+            <div class="author-profile">
+                <img src="img/Pic.png" alt="">
+                <p>Owned by Lola and Coco</p>
+            </div>
+        </div>
+        <nav>
+            <ul>
+                <div class="item-nav">
+                    <li>Products</li>
+                </div>
+                <div class="item-nav">
+                    <li>Photos</li>
+                </div>
+            </ul>
+            <hr>
+        </nav>
+    </header>
+    <div class="content">
+        <div class="content-right">
+            <div class="search-bar">
+                <input type="text" placeholder="Search..." class="search-input">
+            </div>
+        </div>
+        <div class="content-left">
+            <div class="container">
+                <div class="product-list">
+                    <!-- Product Card: div: image, h3,div (img, span), span -->
+                    <div class="wrapper">
+                        <!-- Duoi - cha: relative -->
+                        <div class="product-image">
+                            <img src="https://www.wheystore.vn/upload/product_optimize/image/upl_ostrovit_creatine_monohydrate_500g_1700815546_image_1700815546.jpg" alt="" class="product-img" />
+                            <!-- Tren - con : absolute -->
+                            <img src="./img/Heart.png" alt="" class="heart" />
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Cappuccino</h3>
+                            <div class="full-name">
+                                <img src="./img/Photo_v1.png" alt="" class="avatar-img" />
+                                <span class="avatar-name">Minden Bakery</span>
+                            </div>
+                            <span class="price">$8</span>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <!-- Duoi - cha: relative -->
+                        <div class="product-image">
+                            <img src="https://www.wheystore.vn/upload/product_optimize/image_catalog/upl_whey_gold_standard_5lbs_2_27kg_1677568666_image_1677568666.jpg" alt="" class="product-img" />
+                            <!-- Tren - con : absolute -->
+                            <img src="./img/Heart.png" alt="" class="heart" />
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Cappuccino</h3>
+                            <div class="full-name">
+                                <img src="./img/Photo_v1.png" alt="" class="avatar-img" />
+                                <span class="avatar-name">Minden Bakery</span>
+                            </div>
+                            <span class="price">$8</span>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <!-- Duoi - cha: relative -->
+                        <div class="product-image">
+                            <img src="https://www.wheystore.vn/upload/product_optimize/image_catalog/upl_applied_nutrition_diet_whey_1_8kg_1691570388_image_1691570388.jpg" alt="" class="product-img" />
+                            <!-- Tren - con : absolute -->
+                            <img src="./img/Heart.png" alt="" class="heart" />
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Cappuccino</h3>
+                            <div class="full-name">
+                                <img src="./img/Photo_v1.png" alt="" class="avatar-img" />
+                                <span class="avatar-name">Minden Bakery</span>
+                            </div>
+                            <span class="price">$8</span>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <!-- Duoi - cha: relative -->
+                        <div class="product-image">
+                            <img src="https://www.wheystore.vn/upload/product_optimize/image/upl_ostrovit_creatine_monohydrate_500g_1700815546_image_1700815546.jpg" alt="" class="product-img" />
+                            <!-- Tren - con : absolute -->
+                            <img src="./img/Heart.png" alt="" class="heart" />
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Cappuccino</h3>
+                            <div class="full-name">
+                                <img src="./img/Photo_v1.png" alt="" class="avatar-img" />
+                                <span class="avatar-name">Minden Bakery</span>
+                            </div>
+                            <span class="price">$8</span>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <!-- Duoi - cha: relative -->
+                        <div class="product-image">
+                            <img src="https://www.wheystore.vn/upload/product_optimize/image_catalog/upl_whey_gold_standard_5lbs_2_27kg_1677568666_image_1677568666.jpg" alt="" class="product-img" />
+                            <!-- Tren - con : absolute -->
+                            <img src="./img/Heart.png" alt="" class="heart" />
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Cappuccino</h3>
+                            <div class="full-name">
+                                <img src="./img/Photo_v1.png" alt="" class="avatar-img" />
+                                <span class="avatar-name">Minden Bakery</span>
+                            </div>
+                            <span class="price">$8</span>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <!-- Duoi - cha: relative -->
+                        <div class="product-image">
+                            <img src="https://www.wheystore.vn/upload/product_optimize/image_catalog/upl_applied_nutrition_diet_whey_1_8kg_1691570388_image_1691570388.jpg" alt="" class="product-img" />
+                            <!-- Tren - con : absolute -->
+                            <img src="./img/Heart.png" alt="" class="heart" />
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Cappuccino</h3>
+                            <div class="full-name">
+                                <img src="./img/Photo_v1.png" alt="" class="avatar-img" />
+                                <span class="avatar-name">Minden Bakery</span>
+                            </div>
+                            <span class="price">$8</span>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <!-- Duoi - cha: relative -->
+                        <div class="product-image">
+                            <img src="https://www.wheystore.vn/upload/product_optimize/image/upl_ostrovit_creatine_monohydrate_500g_1700815546_image_1700815546.jpg" alt="" class="product-img" />
+                            <!-- Tren - con : absolute -->
+                            <img src="./img/Heart.png" alt="" class="heart" />
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Cappuccino</h3>
+                            <div class="full-name">
+                                <img src="./img/Photo_v1.png" alt="" class="avatar-img" />
+                                <span class="avatar-name">Minden Bakery</span>
+                            </div>
+                            <span class="price">$8</span>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <!-- Duoi - cha: relative -->
+                        <div class="product-image">
+                            <img src="https://www.wheystore.vn/upload/product_optimize/image_catalog/upl_whey_gold_standard_5lbs_2_27kg_1677568666_image_1677568666.jpg" alt="" class="product-img" />
+                            <!-- Tren - con : absolute -->
+                            <img src="./img/Heart.png" alt="" class="heart" />
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Cappuccino</h3>
+                            <div class="full-name">
+                                <img src="./img/Photo_v1.png" alt="" class="avatar-img" />
+                                <span class="avatar-name">Minden Bakery</span>
+                            </div>
+                            <span class="price">$8</span>
+                        </div>
+                    </div>
+                    <div class="wrapper">
+                        <!-- Duoi - cha: relative -->
+                        <div class="product-image">
+                            <img src="https://www.wheystore.vn/upload/product_optimize/image_catalog/upl_applied_nutrition_diet_whey_1_8kg_1691570388_image_1691570388.jpg" alt="" class="product-img" />
+                            <!-- Tren - con : absolute -->
+                            <img src="./img/Heart.png" alt="" class="heart" />
+                        </div>
+                        <div class="product-content">
+                            <h3 class="product-title">Cappuccino</h3>
+                            <div class="full-name">
+                                <img src="./img/Photo_v1.png" alt="" class="avatar-img" />
+                                <span class="avatar-name">Minden Bakery</span>
+                            </div>
+                            <span class="price">$8</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 </body>

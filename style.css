@@ -1,96 +1,150 @@
-* {
-    padding: 0;
+*{
     margin: 0;
+    padding: 0;
 }
 
-body {
-    font-family: "Montserrat", sans-serif;
-    background-color: #cfdbe4;
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.profile{
     display: flex;
-    justify-content: center;
+    justify-content: space-around;
+    padding-top: 100px;
 }
-
-.touch {
-    color: #6de1c2;
-}
-
-.form-wrapper {
-    max-width: 1440px;
-    border-radius: 50px;
-    padding: 61px 98px;
-    background: linear-gradient(to right, #ffffff 70%, #6DE1C2 30%);
-    box-shadow: 0px 141px 200px -80px rgba(25, 58, 75, 0.3);
+.info-profile{
     display: flex;
-    gap: 64px;
+    gap: 50px;
+}
+.info-profile-address{
+    padding-top: 29px;
+}
+.txt-address{
+    padding-left: 23px;
+    padding-right: 10px;
+}
+.author-profile{
+    align-items: center;
+}
+a{
+    color: var(--search-blue-0-da-8-ca, #0DA8CA);
+    text-decoration: none;
+}
+nav{
+    padding: 125px 91px 85px 91px;
+}
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding-bottom: 21px;
+    display: flex;
+
+}
+nav li {
+    line-height: 36px;
+
+}
+.item-nav{
+    width: 399px;
+    text-align: center;
+}
+.content{
+    width: 100%;
+    height:500px;
+    /* background-color: #0DA8CA; */
+    display: flex;
+    gap: 10px;
+    padding: 0px 91px 85px 91px;
+
+}
+.content-right{
+    height: 400px;
+    width: 20%;
+    /* background-color: blue; */
+}
+.content-left{
+    height:400px;
+    width: 70%;
+    /* background-color: red; */
+}
+.search-bar {
+    position: relative;
 }
 
-.form-content {
+.search-input {
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    padding: 10px 40px 10px 10px; /* Điều chỉnh giảm padding bên phải để chứa icon */
+    width: 200px;
+    outline: none;
+}
+.wrapper {
+    width: 390px;
+    height: 551px;
+    box-shadow: 0px 0px 5px 0px rgba(0, 0, 0, 0.25);
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .product-img {
+    width: 390px;
+    height: 333px;
+    border-top-left-radius: 20px;
+    border-top-right-radius: 20px;
+  }
+  
+  .product-title {
+    font-size: 24px;
+    font-weight: 700;
+    color: #1a191f;
+  }
+  
+  .avatar-name {
+    font-size: 20px;
+    font-weight: 400;
+    color: #1a191f;
+  }
+  
+  .price {
+    font-size: 20px;
+    font-weight: 400;
+    color: #000;
+  }
+  
+  .product-content {
+    padding: 30px 27px 35px 27px;
     display: flex;
     flex-direction: column;
     gap: 20px;
-}
-
-.city {
+  }
+  
+  .full-name {
     display: flex;
-    justify-content: space-between;
-}
-
-.city .input-form {
-    flex-grow: 2; /* Điều chỉnh giá trị theo nhu cầu của bạn */
-    margin-right: 10px; /* Độ lề giữa các input, điều chỉnh giá trị theo nhu cầu của bạn */
-}
-
-.city .input-form:last-child {
-    margin-right: 0; /* Loại bỏ lề ở input cuối cùng */
-}
-.input-form {
-    border: none;
-    border-bottom: 1px solid #737b7d;
-    padding: 12px 20px;
-}
-.input-form-post {
-    border: none;
-    border-bottom: 1px solid #737b7d;
-    padding: 12px 20px;
-    width: 167px;
-}
-.input-file {
-    border: 1px dashed #8e8e8e;
-    padding: 40px 16px;
+    gap: 17px;
+    align-items: center;
+  }
+  
+  .product-list {
     display: flex;
-    align-items: center; /* Căn giữa theo chiều dọc */
-    justify-content: center;
-}
-
-.input-file div {
-    display: flex;
-    align-items: center; /* Căn giữa theo chiều dọc */
-}
-
-.input-file img{
-    padding-right: 24px;
-}
-.btn {
-    border-radius: 10px;
-    background: #0982fe;
-    color: white;
-    border: none;
-    padding: 16px 0px;
-    font-weight: 700;
-    text-transform: uppercase;
-}
-
-.icon-text {
-    display: flex;
-    flex-direction: column;
-}
-
-.icon-item {
-    display: flex;
-    gap: 15px;
-}
-
-.icon-wrapper {
-    display: flex;
-    justify-content: space-between;
-}
+    gap: 20px;
+    flex-wrap: wrap;
+    padding: 30px 0;
+  }
+  
+  .container {
+    max-width: 1280px;
+    margin: 0 auto;
+  }
+  
+  .product-image {
+    /* Cha  - relative*/
+    position: relative;
+  }
+  
+  .heart {
+    /* Con - absolute */
+    /* top - right - bottom - left */
+    /* z-index: thay đổi vị trí đè lên */
+    position: absolute;
+    right: 22px;
+    top: 16px;
+  }
