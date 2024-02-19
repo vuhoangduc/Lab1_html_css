@@ -5,208 +5,337 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link
-        href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@600&family=Poppins&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Open+Sans:wght@600&family=Poppins&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Caladea:ital,wght@0,400;0,700;1,400;1,700&family=Inter:wght@100..900&family=Open+Sans:wght@600&family=Poppins&family=Roboto:ital,wght@0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+        rel="stylesheet">
 </head>
 
 <body>
     <header>
-        <div class="banner">
-            <img src="img/Image.png" alt="">
-        </div>
-        <div class="profile">
-            <div class="info-profile">
-                <img class="avatar" src="img/Photo.png" alt="">
-                <div>
-                    <h1>Coffee Store</h1>
-                    <span>Odessa, ON</span>
-                    <div class="info-profile-address">
-                        <img src="img/Pickeup.png" alt="">
-                        <span>Location<br>(Pick Up):</span>
-                        <span class="txt-address">3 McAlpine St, Toronto, ON, CA, M5R 3T5</span>
-                        <a href="">Get Direction</a>
-                    </div>
-                </div>
-            </div>
-            <div class="author-profile">
-                <img src="img/Pic.png" alt="">
-                <p>Owned by Lola and Coco</p>
-            </div>
-        </div>
-        <nav>
-            <ul>
-                <div class="item-nav">
-                    <li>Products</li>
-                </div>
-                <div class="item-nav">
-                    <li>Photos</li>
+        <nav class="container">
+            <img src="img/logo.png" alt="" class="logo">
+            <ul class="menu-list">
+                <li class="menu-item">
+                    <a href="" class="menu-link">Home</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link">Courses</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link">Partners</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link">Universities</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link">Blog</a>
+                </li>
+                <li class="menu-item">
+                    <a href="" class="menu-link">Contact</a>
+                </li>
+                <div class="btn-group">
+                    <button class="btn-signin">Sign in</button>
+                    <button class="btn-contact">Contact us</button>
                 </div>
             </ul>
-            <hr>
         </nav>
     </header>
-    <div class="content">
-        <div class="content-right">
-            <div class="search-bar">
-                <input type="text" placeholder="Search..." class="search-input">
+    <main>
+        <div class="content">
+            <div class="content-v1">
+                <h1 class="title-c1">Teaching in the Internet age means we must teach <span
+                        class="tomorrow">tomorrow’s</span> <span class="skill">skills today</span></h1>
+                <p class="title-c2">Provides you with the latest online learning system and material that help your</p>
+                <div class="btn2-group">
+                    <button class="btn-instructor">Join as Instructor</button>
+                    <button class="btn-Student">Join as Student</button>
+                </div>
             </div>
         </div>
-        <div class="content-left">
-            <div class="container">
-                <div class="product-list">
-                    <!-- Product Card: div: image, h3,div (img, span), span -->
-                    <div class="wrapper">
-                        <!-- Duoi - cha: relative -->
-                        <div class="product-image">
-                            <img src="https://www.wheystore.vn/upload/product_optimize/image/upl_ostrovit_creatine_monohydrate_500g_1700815546_image_1700815546.jpg" alt="" class="product-img" />
-                            <!-- Tren - con : absolute -->
-                            <img src="./img/Heart.png" alt="" class="heart" />
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-title">Cappuccino</h3>
-                            <div class="full-name">
-                                <img src="./img/Photo_v1.png" alt="" class="avatar-img" />
-                                <span class="avatar-name">Minden Bakery</span>
+        <div class="content-card">
+            <h2 class="title-c-v1">Our Most <span>Popular Courses</span></h2>
+            <p class="title-c2">Let’s join our best classes with our famous instructor and institutes</p>
+            <div class="courses-list">
+                <div class="wrapper">
+                    <!-- Duoi - cha: relative -->
+                    <div class="courses-image">
+                        <img src="img/Mask-group.png" alt="" class="courses-img" />
+                    </div>
+                    <div class="courses-content">
+                        <div class="controll-ratting">
+
+                            <div class="controll-btn">
+                                <img src="img/Polygon.png" alt="">
                             </div>
-                            <span class="price">$8</span>
+
+                            <p>25x Lesson</p>
+                            <img src="img/ratting.png" alt="">
+                        </div>
+                        <h3>Supervised Machine Learning: Regression and Classification</h3>
+                        <hr>
+                        <div class="full-name">
+                            <img src="img/avatar.png" alt="" class="avatar-img" />
+                            <div>
+                                <span class="avatar-name">Minden Bakery</span> <br>
+                                <span>Python Developer</span>
+                            </div>
+                            <button>Design</button>
                         </div>
                     </div>
-                    <div class="wrapper">
-                        <!-- Duoi - cha: relative -->
-                        <div class="product-image">
-                            <img src="https://www.wheystore.vn/upload/product_optimize/image_catalog/upl_whey_gold_standard_5lbs_2_27kg_1677568666_image_1677568666.jpg" alt="" class="product-img" />
-                            <!-- Tren - con : absolute -->
-                            <img src="./img/Heart.png" alt="" class="heart" />
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-title">Cappuccino</h3>
-                            <div class="full-name">
-                                <img src="./img/Photo_v1.png" alt="" class="avatar-img" />
-                                <span class="avatar-name">Minden Bakery</span>
+                </div>
+                <div class="wrapper">
+                    <!-- Duoi - cha: relative -->
+                    <div class="courses-image">
+                        <img src="img/Mask-group.png" alt="" class="courses-img" />
+                    </div>
+                    <div class="courses-content">
+                        <div class="controll-ratting">
+
+                            <div class="controll-btn">
+                                <img src="img/Polygon.png" alt="">
                             </div>
-                            <span class="price">$8</span>
+
+                            <p>25x Lesson</p>
+                            <img src="img/ratting.png" alt="">
+                        </div>
+                        <h3>Supervised Machine Learning: Regression and Classification</h3>
+                        <hr>
+                        <div class="full-name">
+                            <img src="img/avatar.png" alt="" class="avatar-img" />
+                            <div>
+                                <span class="avatar-name">Minden Bakery</span> <br>
+                                <span>Python Developer</span>
+                            </div>
+                            <button>Design</button>
                         </div>
                     </div>
-                    <div class="wrapper">
-                        <!-- Duoi - cha: relative -->
-                        <div class="product-image">
-                            <img src="https://www.wheystore.vn/upload/product_optimize/image_catalog/upl_applied_nutrition_diet_whey_1_8kg_1691570388_image_1691570388.jpg" alt="" class="product-img" />
-                            <!-- Tren - con : absolute -->
-                            <img src="./img/Heart.png" alt="" class="heart" />
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-title">Cappuccino</h3>
-                            <div class="full-name">
-                                <img src="./img/Photo_v1.png" alt="" class="avatar-img" />
-                                <span class="avatar-name">Minden Bakery</span>
+                </div>
+                <div class="wrapper">
+                    <!-- Duoi - cha: relative -->
+                    <div class="courses-image">
+                        <img src="img/Mask-group.png" alt="" class="courses-img" />
+                    </div>
+                    <div class="courses-content">
+                        <div class="controll-ratting">
+
+                            <div class="controll-btn">
+                                <img src="img/Polygon.png" alt="">
                             </div>
-                            <span class="price">$8</span>
+
+                            <p>25x Lesson</p>
+                            <img src="img/ratting.png" alt="">
+                        </div>
+                        <h3>Supervised Machine Learning: Regression and Classification</h3>
+                        <hr>
+                        <div class="full-name">
+                            <img src="img/avatar.png" alt="" class="avatar-img" />
+                            <div>
+                                <span class="avatar-name">Minden Bakery</span> <br>
+                                <span>Python Developer</span>
+                            </div>
+                            <button>Design</button>
                         </div>
                     </div>
-                    <div class="wrapper">
-                        <!-- Duoi - cha: relative -->
-                        <div class="product-image">
-                            <img src="https://www.wheystore.vn/upload/product_optimize/image/upl_ostrovit_creatine_monohydrate_500g_1700815546_image_1700815546.jpg" alt="" class="product-img" />
-                            <!-- Tren - con : absolute -->
-                            <img src="./img/Heart.png" alt="" class="heart" />
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-title">Cappuccino</h3>
-                            <div class="full-name">
-                                <img src="./img/Photo_v1.png" alt="" class="avatar-img" />
-                                <span class="avatar-name">Minden Bakery</span>
+                </div>
+                <div class="wrapper">
+                    <!-- Duoi - cha: relative -->
+                    <div class="courses-image">
+                        <img src="img/Mask-group.png" alt="" class="courses-img" />
+                    </div>
+                    <div class="courses-content">
+                        <div class="controll-ratting">
+
+                            <div class="controll-btn">
+                                <img src="img/Polygon.png" alt="">
                             </div>
-                            <span class="price">$8</span>
+
+                            <p>25x Lesson</p>
+                            <img src="img/ratting.png" alt="">
+                        </div>
+                        <h3>Supervised Machine Learning: Regression and Classification</h3>
+                        <hr>
+                        <div class="full-name">
+                            <img src="img/avatar.png" alt="" class="avatar-img" />
+                            <div>
+                                <span class="avatar-name">Minden Bakery</span> <br>
+                                <span>Python Developer</span>
+                            </div>
+                            <button>Design</button>
                         </div>
                     </div>
-                    <div class="wrapper">
-                        <!-- Duoi - cha: relative -->
-                        <div class="product-image">
-                            <img src="https://www.wheystore.vn/upload/product_optimize/image_catalog/upl_whey_gold_standard_5lbs_2_27kg_1677568666_image_1677568666.jpg" alt="" class="product-img" />
-                            <!-- Tren - con : absolute -->
-                            <img src="./img/Heart.png" alt="" class="heart" />
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-title">Cappuccino</h3>
-                            <div class="full-name">
-                                <img src="./img/Photo_v1.png" alt="" class="avatar-img" />
-                                <span class="avatar-name">Minden Bakery</span>
+                </div>
+                <div class="wrapper">
+                    <!-- Duoi - cha: relative -->
+                    <div class="courses-image">
+                        <img src="img/Mask-group.png" alt="" class="courses-img" />
+                    </div>
+                    <div class="courses-content">
+                        <div class="controll-ratting">
+
+                            <div class="controll-btn">
+                                <img src="img/Polygon.png" alt="">
                             </div>
-                            <span class="price">$8</span>
+
+                            <p>25x Lesson</p>
+                            <img src="img/ratting.png" alt="">
+                        </div>
+                        <h3>Supervised Machine Learning: Regression and Classification</h3>
+                        <hr>
+                        <div class="full-name">
+                            <img src="img/avatar.png" alt="" class="avatar-img" />
+                            <div>
+                                <span class="avatar-name">Minden Bakery</span> <br>
+                                <span>Python Developer</span>
+                            </div>
+                            <button>Design</button>
                         </div>
                     </div>
-                    <div class="wrapper">
-                        <!-- Duoi - cha: relative -->
-                        <div class="product-image">
-                            <img src="https://www.wheystore.vn/upload/product_optimize/image_catalog/upl_applied_nutrition_diet_whey_1_8kg_1691570388_image_1691570388.jpg" alt="" class="product-img" />
-                            <!-- Tren - con : absolute -->
-                            <img src="./img/Heart.png" alt="" class="heart" />
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-title">Cappuccino</h3>
-                            <div class="full-name">
-                                <img src="./img/Photo_v1.png" alt="" class="avatar-img" />
-                                <span class="avatar-name">Minden Bakery</span>
-                            </div>
-                            <span class="price">$8</span>
-                        </div>
+                </div>
+                <div class="wrapper">
+                    <!-- Duoi - cha: relative -->
+                    <div class="courses-image">
+                        <img src="img/Mask-group.png" alt="" class="courses-img" />
                     </div>
-                    <div class="wrapper">
-                        <!-- Duoi - cha: relative -->
-                        <div class="product-image">
-                            <img src="https://www.wheystore.vn/upload/product_optimize/image/upl_ostrovit_creatine_monohydrate_500g_1700815546_image_1700815546.jpg" alt="" class="product-img" />
-                            <!-- Tren - con : absolute -->
-                            <img src="./img/Heart.png" alt="" class="heart" />
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-title">Cappuccino</h3>
-                            <div class="full-name">
-                                <img src="./img/Photo_v1.png" alt="" class="avatar-img" />
-                                <span class="avatar-name">Minden Bakery</span>
+                    <div class="courses-content">
+                        <div class="controll-ratting">
+
+                            <div class="controll-btn">
+                                <img src="img/Polygon.png" alt="">
                             </div>
-                            <span class="price">$8</span>
+
+                            <p>25x Lesson</p>
+                            <img src="img/ratting.png" alt="">
                         </div>
-                    </div>
-                    <div class="wrapper">
-                        <!-- Duoi - cha: relative -->
-                        <div class="product-image">
-                            <img src="https://www.wheystore.vn/upload/product_optimize/image_catalog/upl_whey_gold_standard_5lbs_2_27kg_1677568666_image_1677568666.jpg" alt="" class="product-img" />
-                            <!-- Tren - con : absolute -->
-                            <img src="./img/Heart.png" alt="" class="heart" />
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-title">Cappuccino</h3>
-                            <div class="full-name">
-                                <img src="./img/Photo_v1.png" alt="" class="avatar-img" />
-                                <span class="avatar-name">Minden Bakery</span>
+                        <h3>Supervised Machine Learning: Regression and Classification</h3>
+                        <hr>
+                        <div class="full-name">
+                            <img src="img/avatar.png" alt="" class="avatar-img" />
+                            <div>
+                                <span class="avatar-name">Minden Bakery</span> <br>
+                                <span>Python Developer</span>
                             </div>
-                            <span class="price">$8</span>
-                        </div>
-                    </div>
-                    <div class="wrapper">
-                        <!-- Duoi - cha: relative -->
-                        <div class="product-image">
-                            <img src="https://www.wheystore.vn/upload/product_optimize/image_catalog/upl_applied_nutrition_diet_whey_1_8kg_1691570388_image_1691570388.jpg" alt="" class="product-img" />
-                            <!-- Tren - con : absolute -->
-                            <img src="./img/Heart.png" alt="" class="heart" />
-                        </div>
-                        <div class="product-content">
-                            <h3 class="product-title">Cappuccino</h3>
-                            <div class="full-name">
-                                <img src="./img/Photo_v1.png" alt="" class="avatar-img" />
-                                <span class="avatar-name">Minden Bakery</span>
-                            </div>
-                            <span class="price">$8</span>
+                            <button>Design</button>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
-    </div>
+        <div class="about-us">
+            <h2>Testimonials</h2>
+            <p>What our student say about us</p>
+            <div class="feed-back container">
+                <div class="feed-wrapper">
+                    <div class="user">
+                        <img src="img/avatar.png" alt="" class="user-img" />
+                        <span class="username">Ronald Richards</span>
+                    </div>
+                    <p class="feed-content">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum.Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.
+                    </p>
+                    <div class="rating">
+                        <img src="img/ratting.png" alt="" class="star-yellow" />
+                    </div>
+                </div>
+                <div class="feed-wrapper">
+                    <div class="user">
+                        <img src="img/avatar.png" alt="" class="user-img" />
+                        <span class="username">Ronald Richards</span>
+                    </div>
+                    <p class="feed-content">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum.Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.
+                    </p>
+                    <div class="rating">
+                        <img src="img/ratting.png" alt="" class="star-yellow" />
+                    </div>
+                </div>
+                <div class="feed-wrapper">
+                    <div class="user">
+                        <img src="img/avatar.png" alt="" class="user-img" />
+                        <span class="username">Ronald Richards</span>
+                    </div>
+                    <p class="feed-content">
+                        Excepteur sint occaecat cupidatat non proident, sunt in culpa qui
+                        officia deserunt mollit anim id est laborum.Duis aute irure dolor in
+                        reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
+                        pariatur.
+                    </p>
+                    <div class="rating">
+                        <img src="img/ratting.png" alt="" class="star-yellow" />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        <div class="footer">
+            <!-- logo -->
+            <div class="footer-logo">
+                <img src="img/Exclude.png" alt="">
+                <p class="footer-infor">
+                    Veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+                    consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat
+                    nulla
+                    pariatur.
+                </p>
+            </div>
+            <!-- quick link -->
+            <div class="quick-link">
+                <ul class="link-group">
+                    <h1 class="quick"> Quick link</h1>
+                    <div class="link-row">
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">About</a>
+                        </li>
+
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">Blog</a>
+                        </li>
+                    </div>
+                    <div class="link-row">
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">Couse</a>
+                        </li>
+                        <li class="footer-item">
+                            <a href="#" class="footer-link">Contact</a>
+                        </li>
+                    </div>
+                </ul>
+            </div>
+            <!-- contact -->
+            <div class="contact-us">
+                <h1 class="quick"> Contact Us</h1>
+                <div class="phone-address">
+                    <div class="icon-footer">
+                        <img src="img/phone_icon.png" alt="">
+                        <span class="infor">(209) 555-0104</span>
+                    </div>
+                    <div class="icon-footer">
+                        <img src="img/map_icon.png" alt="">
+                        <span class="infor">2715 Ash Dr. San Jose, South Dakota 83475</span>
+                    </div>
+                </div>
+                <div class="icon-footer">
+                    <img src="img/mail_icon.png" alt="">
+                    <span class="infor">michelle.rivera@example.com</span>
+                </div>
+            </div>
+        </div>
+        <hr class="line-footer">
+    </footer>
 </body>
 
 </html>
